@@ -1,0 +1,40 @@
+{
+  "name": "plastic-palette",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./palette.d.ts",
+        "default": "./palette.js"
+      }
+    }
+  },
+  "module": "./palette.js",
+  "types": "./palette.d.ts",
+  "files": [
+    "palette.d.ts",
+    "palette.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{css,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": "@will-stone/prettier-config",
+  "devDependencies": {
+    "@will-stone/eslint-config": "^0.3.0",
+    "@will-stone/prettier-config": "^7.0.1",
+    "eslint": "^8.50.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
