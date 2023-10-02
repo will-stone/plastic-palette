@@ -1,1 +1,3 @@
-export { default } from '@will-stone/eslint-config'
+import config from '@will-stone/eslint-config'
+
+export default [...config]

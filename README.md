@@ -1,16 +1,9 @@
-# plastic-palette
+# Plastic Palette
 
-To install dependencies:
+The palette used by [Plastic Theme for VSCode](https://plastic.wstone.uk/).
 
-```bash
-bun install
+```js
+import palette from 'plastic-theme'
+
+console.log(palette.sunglo)
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.0. [Bun](https://bun.sh)
-is a fast all-in-one JavaScript runtime.
