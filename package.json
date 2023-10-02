@@ -16,6 +16,7 @@
     "palette.js"
   ],
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
     "prepare": "husky install"
   },
@@ -29,7 +30,7 @@
   },
   "prettier": "@will-stone/prettier-config",
   "devDependencies": {
-    "@will-stone/eslint-config": "^0.3.0",
+    "@will-stone/eslint-config": "^0.4.0",
     "@will-stone/prettier-config": "^7.0.1",
     "eslint": "^8.50.0",
     "husky": "^8.0.3",

@@ -1,3 +1,6 @@
 node_modules
-
 .DS_STORE
+
+# Build artefacts
+palette.d.ts
+palette.js
