@@ -31,6 +31,7 @@
   },
   "prettier": "@will-stone/prettier-config",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@will-stone/eslint-config": "^0.4.0",
     "@will-stone/prettier-config": "^7.0.1",
     "eslint": "^8.50.0",
