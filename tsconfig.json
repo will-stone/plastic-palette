@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": ".",
-
     "module": "es2020",
     "moduleResolution": "Bundler",
     "target": "ES2020",
-    "declaration": true,
     "pretty": true,
     "newLine": "lf",
     "stripInternal": true,
@@ -21,6 +18,6 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "include": ["./palette.ts"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
