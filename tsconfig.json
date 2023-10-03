@@ -2,14 +2,9 @@
   "compilerOptions": {
     "outDir": ".",
 
-    "module": "node16",
-    "moduleResolution": "node16",
-    "moduleDetection": "force",
-    "target": "ES2021", // Node.js 16
-    "lib": ["ES2021"],
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": false, // ESM doesn't yet support JSON modules
-    "jsx": "react",
+    "module": "es2020",
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
     "declaration": true,
     "pretty": true,
     "newLine": "lf",
@@ -23,7 +18,6 @@
     "noUncheckedIndexedAccess": true,
     "noPropertyAccessFromIndexSignature": true,
     "noEmitOnError": true,
-    "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },

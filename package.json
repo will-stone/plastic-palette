@@ -5,19 +5,23 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./palette.d.ts",
-        "default": "./palette.js"
+        "types": "./dist/palette.d.ts",
+        "default": "./dist/palette.js"
+      },
+      "require": {
+        "types": "./dist/palette.d.cts",
+        "default": "./dist/palette.cjs"
       }
     }
   },
-  "module": "./palette.js",
-  "types": "./palette.d.ts",
+  "main": "./dist/palette.js",
+  "module": "./dist/palette.js",
+  "types": "./dist/palette.d.ts",
   "files": [
-    "palette.d.ts",
-    "palette.js"
+    "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup ./palette.ts --format esm,cjs --clean --dts",
     "lint": "eslint .",
     "prepare": "husky install"
   },
@@ -38,6 +42,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }
 }
