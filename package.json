@@ -21,7 +21,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup ./palette.ts --format esm,cjs --clean --dts",
+    "build": "tsup src --format esm,cjs --clean --dts",
     "lint": "eslint .",
     "prepare": "husky install"
   },
