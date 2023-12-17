@@ -1,5 +1,11 @@
 # plastic-palette
 
+## 1.0.5
+
+### Patch Changes
+
+- e209f72: Fixed CJS default export.
+
 ## 1.0.4
 
 ### Patch Changes
