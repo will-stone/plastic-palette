@@ -4,24 +4,18 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/palette.d.ts",
-        "default": "./dist/palette.js"
-      },
-      "require": {
-        "types": "./dist/palette.d.cts",
-        "default": "./dist/palette.cjs"
-      }
+      "import": "./dist/palette.js",
+      "require": "./dist/palette.cjs"
     }
   },
-  "main": "./dist/palette.js",
+  "main": "./dist/palette.cjs",
   "module": "./dist/palette.js",
   "types": "./dist/palette.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup src --format esm,cjs --clean --dts",
+    "build": "tsup src --format esm,cjs --clean --dts --cjsInterop --splitting",
     "lint": "eslint .",
     "prepare": "husky install"
   },

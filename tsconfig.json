@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "es2020",
-    "moduleResolution": "Bundler",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "target": "ES2020",
     "pretty": true,
     "newLine": "lf",
